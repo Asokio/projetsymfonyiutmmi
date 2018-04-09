@@ -1,0 +1,8 @@
+{
+    "require": {
+        "api-platform/core": "^1.1"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.4"
+    }
+}

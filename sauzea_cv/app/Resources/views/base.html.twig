@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link href="favicon.png" rel=icon>
+        <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+        <link href=" {{ asset('template/css/font-awesome.min.css') }} " rel="stylesheet">
+        <link href=" {{ asset('template/css/bootstrap.min.css') }} " rel="stylesheet">
+        <link href=" {{ asset('template/css/owl.carousel.css') }} " rel="stylesheet">
+        <link href=" {{ asset('template/css/style.css') }} " rel="stylesheet">
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script src=" {{ asset('template/js/jquery-2.1.4.min.js') }} "></script>
+            <script src=" {{ asset('template/js/bootstrap.min.js') }} "></script>
+            <script src=" {{ asset('template/js/owl.carousel.min.js') }} "></script>
+            <script src=" {{ asset('template/js/scripts.js') }} "></script>
+        {% endblock %}   
+    </body>
+</html>
